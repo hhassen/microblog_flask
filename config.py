@@ -14,3 +14,6 @@ class Config(object):
     ADMINS = ['your-email@example.com']
     POSTS_PER_PAGE = 5
     LANGUAGES = ['en', 'es']
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID') or 'AKIA4xxxxxxxx'
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY') or ''
+    AWS_DEFAULT_REGION = os.environ.get('AWS_DEFAULT_REGION') or 'us-east-1'
